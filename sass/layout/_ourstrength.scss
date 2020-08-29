@@ -1,55 +1,55 @@
 .our-strengths-section {
-    background-color: $lightest-background-color;
-    padding-top: 94px;
-    padding-bottom: 47px;
-  }
-  
-  .our-strengths-list {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .our-strengths-section-pics {
-    width: 270px;
-    height: 120px;
-    text-align: center;
-    padding: 25px 102px;
-    background-color: $darker-background-color;
-  }
-  
-  .our-strengths-section-pics {
-    margin-bottom: 30px;
-  }
+  background-color: $lightest-background-color;
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 
-  .our-strengths-item {
-    width: 270px;
-  
+.our-strengths-list {
+  display: flex;
+  justify-content: center;
+}
+
+.our-strengths-section-pics {
+  width: 270px;
+  height: 120px;
+  text-align: center;
+  padding: 25px 102px;
+  background-color: $darker-background-color;
+}
+
+.our-strengths-section-pics {
+  margin-bottom: 30px;
+}
+
+.our-strengths-item {
+  width: 270px;
+
+&:not(:last-child) {
+  margin-right: 30px;}
+}
+
+
+.our-strengths-section-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.our-strengths-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0, 03em;
+  text-transform: uppercase;
+
+
   &:not(:last-child) {
-    margin-right: 30px;}
+    margin-bottom: 10px;}
   }
-  
-  
-  .our-strengths-section-svg {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .our-strengths-item-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0, 03em;
-    text-transform: uppercase;
- 
-  
-    &:not(:last-child) {
-      margin-bottom: 10px;}
-    }
 
-  .our-strengths-item-info {
-    font-weight: 400; 
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0, 03em;
-    color: $light-grey-text-color;
-  }
+.our-strengths-item-info {
+  font-weight: 400; 
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0, 03em;
+  color: $light-grey-text-color;
+}
