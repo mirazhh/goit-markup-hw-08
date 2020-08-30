@@ -12,36 +12,50 @@
     <header class="header-box">
       <!--WebStudio main information-->
       <div class="header-box-container container">
-        <nav class="header-box-navigation">
+        <nav class="web-studio-navigation">
           <a class="web-studio-logo web-studio-header-logo link" href="./index.html">
             <span class="web-logo-part">Web</span> 
             <span class="studio-logo-part">Studio</span>
           </a>
-          <ul class="web-studio-menu list">
-            <li class="web-studio-item">
+        </nav>
+        <button type="button" class="header-menu-button is-open" aria-expanded="false" aria-controls="header-box-menu-wrapper" data-menu-button>
+          <svg class="icon-menu-svg">
+            <use href="./images/menu-icon.svg#icon-menu">
+            </use>
+          </svg>
+          <svg class="icon-close-40px-svg">
+            <use href="./images/close-40px.svg#icon-close-40px">
+            </use>
+          </svg>
+        </button>
+        <div class="header-box-menu-wrapper" data-menu>
+          <nav class="header-box-navigation">
+            <ul class="web-studio-menu list">
+            <li class="web-studio-item web-studio-item-text">
               <a class="web-studio-item-link web-studio-item-link-active link"  href="./index.html">Студия</a>
             </li>
-            <li class="web-studio-item">
+            <li class="web-studio-item  portfolio-item-text">
               <a class="web-studio-item-link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="web-studio-item">
+            <li class="web-studio-item contacts-item-text">
               <a class="web-studio-item-link link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <address class="contacts">
+         </nav>
+          <div class="contacts-menu-list-wrapper">
+            <address class="contacts">
             <ul class="contacts-menu list">
               <li class="contacts-menu-item">
                 <a class="contacts-menu-item-link contacts-menu-item-mailto contacts-menu-item-link-active link"  href="mailto:info@devstudio.com">
-                <svg class="icon-envelope-svg">
-                  <use href="./images/sprite.svg#icon-envelope">
-                  </use>
-                </svg>
+                  <svg class="icon-envelope-svg">
+                    <use href="./images/sprite.svg#icon-envelope">
+                    </use>
+                  </svg>
                   <span class="mailto-text">info@devstudio.com
-                </span>
+                  </span>
                 </a>
-              </li>
-              <li class="contacts-menu-item">
+             </li>
+             <li class="contacts-menu-item">
                 <a class="contacts-menu-item-link contacts-menu-item-tel link"   href="tel:+380991111111">
                   <svg class="icon-smartphone-svg">
                     <use href="./images/sprite.svg#icon-smartphone">
@@ -50,17 +64,18 @@
                   <span class="tel-number">+38 099 111 11 11
                   </span>
                 </a>
-              </li>
-            </ul>
-        </address>
+             </li>
+           </ul>
+           </address>
+          </div>
+        </div>
       </div>
-    </header>
-    
-    <main class="main">
+    </header> 
 
-      <!--Hero section-->
+    <main>
+    <!--Hero section-->
 
-      <section class="hero-section">
+      <!--<section class="hero-section">
         <div class="hero-section-overlay">
           <div class="hero-section-container container">
             <h1 class="hero-section-title">
@@ -72,11 +87,11 @@
              </button>
           </div>
         </div>
-      </section>
+      </section>-->
 
       <!--Our strengths section-->
 
-      <section class="our-strengths-section">
+      <!--<section class="our-strengths-section">
         <div class="our-strengths-section-container container">
           <h2 class="our-strengths-section-title is-hidden" hidden>Наши сильные стороны</h2>
             <ul class="our-strengths-list list">
@@ -134,11 +149,11 @@
               </li>
             </ul>
         </div>
-      </section>
+      </section>-->
 
       <!--What we do section-->
 
-      <section class="what-we-do-section">
+      <!--<section class="what-we-do-section">
         <div class="what-we-do-section-container container">
           <h2 class="what-we-do-section-title title">Чем мы занимаемся</h2>
             <ul class="what-we-do-list list">
@@ -183,11 +198,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
       <!--Our team section-->
 
-      <section class="our-team-section">
+      <!--<section class="our-team-section">
         <div class="our-team-section-container container">
         <h2 class="our-team-section-title title">Наша команда</h2>
         <ul class="our-team-list list">
@@ -378,11 +393,11 @@
           </li>
         </ul>
       </div>
-      </section>
+      </section>-->
 
       <!--Constant clients section-->
 
-      <section class="contant-clients-section">
+      <!--<section class="contant-clients-section">
         <div class="constant-clients-section-container container">
         <h2 class="constant-clients-section-title title">Постоянные клиенты</h2>
         <ul class="constant-clients-section-list list">
@@ -391,64 +406,63 @@
               <svg class="constant-clients-section-svg logo-1">
                 <use href="./images/sprite.svg#icon-constant_clients_logo-1">
                 </use>
-              </svg>
+              </svg>-->
               <!--"Логотип компании 1"-->
-            </a>
+            <!--</a>
           </li>
           <li class="constant-clients-section-item">
             <a class="constant-clients-section-logo link" href="">
               <svg class="constant-clients-section-svg logo-2">
                 <use href="./images/sprite.svg#icon-constant_clients_logo-2">
                 </use>
-              </svg>
+              </svg>-->
                 <!--"Логотип компании 2"-->
-            </a>
+            <!--</a>
           </li>
           <li class="constant-clients-section-item">
             <a class="constant-clients-section-logo link" href="">
               <svg class="constant-clients-section-svg logo-3">
                 <use href="./images/sprite.svg#icon-constant_clients_logo-3">
                 </use>
-              </svg>
+              </svg>-->
                 <!--"Логотип компании 3"-->
-            </a>
+            <!--</a>
           </li>
           <li class="constant-clients-section-item">
             <a class="constant-clients-section-logo link" href="">
               <svg class="constant-clients-section-svg logo-4">
                 <use href="./images/sprite.svg#icon-constant_clients_logo-4">
                 </use>
-              </svg>
+              </svg>-->
                 <!--"Логотип компании 4"-->
-            </a>
+            <!--</a>
           </li>
           <li class="constant-clients-section-item">
             <a class="constant-clients-section-logo link" href="">
               <svg class="constant-clients-section-svg logo-5">
                 <use href="./images/sprite.svg#icon-constant_clients_logo-5">
                 </use>
-              </svg>
+              </svg>-->
                 <!--"Логотип компании 5"-->
-            </a>
+            <!--</a>
           </li>
           <li class="constant-clients-section-item">
             <a class="constant-clients-section-logo link" href="">
               <svg class="constant-clients-section-svg logo-6">
                 <use href="./images/sprite.svg#icon-constant_clients_logo-6">
                 </use>
-              </svg>
+              </svg>-->
                 <!--"Логотип компании 6"-->
-            </a>
+            <!--</a>
           </li>
         </ul>
       </div>
-      </section>
+      </section>-->
     </main>
 
-    <footer class="footer-box">
-      
+    <!--<footer class="footer-box">-->
       <!--Footer contacts section-->
-      <div class="footer-box-container container">
+      <!--<div class="footer-box-container container">
         <div class="footer-box-contacts">
             <a class="web-studio-logo web-studio-footer-logo link" href="./index.html">
               <span class="web-logo-part">Web</span> 
@@ -522,10 +536,10 @@
           </form>
         </div>
       </div> 
-    </footer>
+    </footer>-->
 
     <!--Modal window-->
-    <div class="backdrop is-hidden" data-modal>
+    <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button"  class="modal-close-button" data-modal-close>
           <svg class="icon-close-svg">
@@ -584,8 +598,9 @@
             </button>
         </form>
       </div>
-    </div>
+    </div>-->
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
