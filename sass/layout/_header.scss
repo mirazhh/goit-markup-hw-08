@@ -167,9 +167,6 @@
     padding-right: 140px;
     padding-bottom: 60px;
     padding-left: 140px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     transform: translateX(-150%);
     transition-property: transform;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -196,6 +193,7 @@
     margin-bottom: 16px;
   }
   
+  .header-box-menu-wrapper,
   .contacts-menu-list-wrapper {
     align-items: center;
     justify-content: center;
@@ -206,7 +204,6 @@
     font-size: 18px;
     line-height: 1.167;
   }
-
 
   .web-studio-item-link-active {
     &::after {
@@ -232,17 +229,18 @@
     line-height: 1.167;
   }
 
+  .header-box-menu-wrapper,
   .web-studio-menu {
     display: flex;
     align-items: center;
   }
-  
+
   .contacts-menu {
     display: flex;
     flex-direction: column;
   }
   
-  .web-studio-header-logo {
+  .web-studio-navigation {
     margin-right: 81px;
   }
   
@@ -262,41 +260,87 @@
   .web-studio-item:not(:last-child) {
     margin-right: 50px;
   }
-  
+
+  .header-box-navigation {
+    margin-right: 84px;
+  }
+
   .contacts-menu-item:not(:last-child) {
     margin-bottom: 10px;
   }
   
   .contacts-menu-item-link {
-    color: $light-grey-text-color;
     font-size: 12px;
     line-height: 1.167;
-  
-    &:hover,
-    &:focus {
-      color: $accent-blue-color;
     }
-
-    &:hover svg,
-    &:focus svg {
-    fill: $accent-blue-color;
-    }
-  }
-  
-  
-  .contacts-menu {
-    align-items: center;
-  }
-  
 }
 
 /* Десктоп*/
 
-@media screen and (min-width: 120px) {
-  
+@media screen and (min-width: 1200px) {
+  .header-menu-button {
+    display: none;
+  }
+
   .web-studio-logo {
     font-size: 26px;
     line-height: 1.19ж
+  }
+  
+  .header-box-navigation,
+  .web-studio-menu,
+  .contacts-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .web-studio-header-logo {
+    margin-right: 85px;
+  }
+  
+  .web-studio-item-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .web-studio-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .contacts-menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .web-studio-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  
+  .web-studio-item-link,
+  .contacts-menu-item-link,
+  .contacts-menu-item-link {
+    font-style: normal;
+    font-weight: 500;
+    transition-property: color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .web-studio-item-link,
+  .mailto-text,
+  .tel-number {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+  
+  .web-studio-item-link-active {
+    &::after {
+      content: "";
+      bottom: 0;
+    }
+  }
+  
+  .contacts-menu {
+    align-items: center;
   }
 
 }

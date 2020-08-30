@@ -1,33 +1,23 @@
-/*.our-strengths-section {
+.our-strengths-section {
   background-color: $lightest-background-color;
-  padding-top: 94px;
-  padding-bottom: 47px;
 }
 
 .our-strengths-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
   justify-content: center;
 }
 
 .our-strengths-section-pics {
-  width: 270px;
-  height: 120px;
   text-align: center;
-  padding: 25px 102px;
+  align-items: center;
   background-color: $darker-background-color;
 }
 
-.our-strengths-section-pics {
+.our-strengths-section-pics:not(:last-child) {
   margin-bottom: 30px;
 }
-
-.our-strengths-item {
-  width: 270px;
-
-&:not(:last-child) {
-  margin-right: 30px;}
-}
-
 
 .our-strengths-section-svg {
   width: 70px;
@@ -38,7 +28,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
 
@@ -53,4 +43,72 @@
   letter-spacing: 0, 03em;
   color: $light-grey-text-color;
 }
-*/
+
+
+/*Смартфон*/ 
+
+@media screen and (max-width: 767px) {
+  
+  .our-strengths-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .our-strengths-section-pics {
+    width: 450px;
+    height: 120px;
+    padding-top: 25px;
+  }
+  
+  .our-strengths-item {
+    width: 450px;
+  
+  &:not(:last-child) {
+    margin-bottom: 30px;}
+  }
+
+  .our-strengths-item-info {
+    align-items: center;
+    font-weight: 400; 
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0, 03em;
+    color: $light-grey-text-color;
+  }
+
+}
+
+
+  /* Планшет*/
+
+@media screen and (min-width: 768px) {
+
+  .our-strengths-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+}
+
+/* Десктоп*/
+
+@media screen and (min-width: 1200px) {
+
+  .our-strengths-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  
+  .our-strengths-section-pics {
+    width: 270px;
+    height: 120px;
+  }
+
+  .our-strengths-item {
+    /*width: 270px;*/
+  
+  &:not(:last-child) {
+    margin-right: 30px;}
+  }
+}
+

@@ -917,9 +917,6 @@ textarea {
     padding-right: 140px;
     padding-bottom: 60px;
     padding-left: 140px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     transform: translateX(-150%);
     transition-property: transform;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -940,6 +937,7 @@ textarea {
   .contacts-menu-item:not(:last-child) {
     margin-bottom: 16px;
   }
+  .header-box-menu-wrapper,
   .contacts-menu-list-wrapper {
     align-items: center;
     justify-content: center;
@@ -967,6 +965,7 @@ textarea {
     font-size: 24px;
     line-height: 1.167;
   }
+  .header-box-menu-wrapper,
   .web-studio-menu {
     display: flex;
     align-items: center;
@@ -975,7 +974,7 @@ textarea {
     display: flex;
     flex-direction: column;
   }
-  .web-studio-header-logo {
+  .web-studio-navigation {
     margin-right: 81px;
   }
   .web-studio-item-link {
@@ -990,69 +989,99 @@ textarea {
   .web-studio-item:not(:last-child) {
     margin-right: 50px;
   }
+  .header-box-navigation {
+    margin-right: 84px;
+  }
   .contacts-menu-item:not(:last-child) {
     margin-bottom: 10px;
   }
   .contacts-menu-item-link {
-    color: #757575;
     font-size: 12px;
     line-height: 1.167;
   }
-  .contacts-menu-item-link:hover, .contacts-menu-item-link:focus {
-    color: #2196f3;
+}
+
+/* Десктоп*/
+@media screen and (min-width: 1200px) {
+  .header-menu-button {
+    display: none;
   }
-  .contacts-menu-item-link:hover svg,
-  .contacts-menu-item-link:focus svg {
-    fill: #2196f3;
+  .web-studio-logo {
+    font-size: 26px;
+    line-height: 1.19ж;
+  }
+  .header-box-navigation,
+  .web-studio-menu,
+  .contacts-menu {
+    display: flex;
+    align-items: center;
+  }
+  .web-studio-header-logo {
+    margin-right: 85px;
+  }
+  .web-studio-item-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .web-studio-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts-menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .web-studio-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .web-studio-item-link,
+  .contacts-menu-item-link,
+  .contacts-menu-item-link {
+    font-style: normal;
+    font-weight: 500;
+    transition-property: color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .web-studio-item-link,
+  .mailto-text,
+  .tel-number {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+  .web-studio-item-link-active::after {
+    content: "";
+    bottom: 0;
   }
   .contacts-menu {
     align-items: center;
   }
 }
 
-/* Десктоп*/
-@media screen and (min-width: 120px) {
-  .web-studio-logo {
-    font-size: 26px;
-    line-height: 1.19ж;
-  }
-}
-
-/*.hero-section-overlay {
-  max-width: 1600px;
+.hero-section-overlay {
+  /*max-width: 1600px;*/
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../images/Hero/Hero.jpg);
+    url(../images/Hero/Hero.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.hero-section-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .hero-section-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $dark-theme-text-color;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
 .hero-section-button {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1060,7 +1089,7 @@ textarea {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   align-items: center;
@@ -1068,44 +1097,80 @@ textarea {
   letter-spacing: 0.06em;
   border: 0px;
   border-radius: 4px;
+}
 
-  &:hover,
-  &:focus {
-    color: $dark-theme-text-color;
-    background-color: $accent-blue-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+.hero-section-button:hover, .hero-section-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Смартфон*/
+@media screen and (max-width: 767px) {
+  .header-box {
+    max-width: 480px;
+    margin: 0 auto;
   }
-}*/
-/*.our-strengths-section {
-  background-color: $lightest-background-color;
-  padding-top: 94px;
-  padding-bottom: 47px;
+  .hero-section-container {
+    padding-top: 118px;
+    padding-right: 60px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+  }
+  .hero-section-title {
+    font-size: 26px;
+    line-height: 1.615;
+  }
+}
+
+/* Планшет*/
+@media screen and (min-width: 768px) {
+  .hero-section-container {
+    padding-top: 118px;
+    padding-right: 204px;
+    padding-bottom: 118px;
+    padding-left: 204px;
+  }
+  .hero-section-title {
+    font-size: 26px;
+    line-height: 1.615;
+  }
+}
+
+/* Десктоп*/
+@media screen and (min-width: 1200px) {
+  .hero-section-container {
+    padding-top: 118px;
+    padding-right: 452px;
+    padding-bottom: 118px;
+    padding-left: 452px;
+  }
+  .hero-section-title {
+    font-size: 44px;
+    line-height: 1.363;
+  }
+}
+
+.our-strengths-section {
+  background-color: #ffffff;
 }
 
 .our-strengths-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
   justify-content: center;
 }
 
 .our-strengths-section-pics {
-  width: 270px;
-  height: 120px;
   text-align: center;
-  padding: 25px 102px;
-  background-color: $darker-background-color;
+  align-items: center;
+  background-color: #f5f4fa;
 }
 
-.our-strengths-section-pics {
+.our-strengths-section-pics:not(:last-child) {
   margin-bottom: 30px;
 }
-
-.our-strengths-item {
-  width: 270px;
-
-&:not(:last-child) {
-  margin-right: 30px;}
-}
-
 
 .our-strengths-section-svg {
   width: 70px;
@@ -1116,22 +1181,75 @@ textarea {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+}
 
-
-  &:not(:last-child) {
-    margin-bottom: 10px;}
-  }
+.our-strengths-item-title:not(:last-child) {
+  margin-bottom: 10px;
+}
 
 .our-strengths-item-info {
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0, 03em;
-  color: $light-grey-text-color;
+  color: #757575;
 }
-*/
+
+/*Смартфон*/
+@media screen and (max-width: 767px) {
+  .our-strengths-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .our-strengths-section-pics {
+    width: 450px;
+    height: 120px;
+    padding-top: 25px;
+  }
+  .our-strengths-item {
+    width: 450px;
+  }
+  .our-strengths-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .our-strengths-item-info {
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0, 03em;
+    color: #757575;
+  }
+}
+
+/* Планшет*/
+@media screen and (min-width: 768px) {
+  .our-strengths-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Десктоп*/
+@media screen and (min-width: 1200px) {
+  .our-strengths-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  .our-strengths-section-pics {
+    width: 270px;
+    height: 120px;
+  }
+  .our-strengths-item {
+    /*width: 270px;*/
+  }
+  .our-strengths-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 /*.title  {
   font-weight: 700; 
   font-size: 36px;
