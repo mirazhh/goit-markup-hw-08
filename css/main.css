@@ -1250,8 +1250,8 @@ textarea {
   }
 }
 
-/*.title  {
-  font-weight: 700; 
+.title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -1259,7 +1259,7 @@ textarea {
 }
 
 .what-we-do-section {
-  background-color: $lightest-background-color;
+  background-color: #ffffff;
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -1290,22 +1290,44 @@ textarea {
 .what-we-do-item-title {
   width: 370px;
   height: 70px;
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0, 03em;
   text-transform: uppercase;
-  color: $dark-theme-text-color;
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   margin: 0;
   align-items: center;
   justify-content: center;
   padding-top: 27px;
   padding-bottom: 27px;
-}*/
-/*.our-team-section {
-  background-color: $darker-background-color;
+}
+
+/* Смартфон*/
+/* Планшет*/
+@media screen and (min-width: 768px) {
+  /*.hero-section-container {
+    padding-top: 118px;
+    padding-right: 204px;
+    padding-bottom: 118px;
+    padding-left: 204px;
+  }*/
+}
+
+/* Десктоп*/
+@media screen and (min-width: 1200px) {
+  /*.hero-section-container {
+    padding-top: 118px;
+    padding-right: 452px;
+    padding-bottom: 118px;
+    padding-left: 452px;
+  }*/
+}
+
+.our-team-section {
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -1316,18 +1338,18 @@ textarea {
 }
 
 .our-team-member {
-  background: $lightest-background-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
 
-  .social-network-links-list {
-    padding-top: 16px;
-    padding-bottom: 24px;
-  }
+.our-team-member .social-network-links-list {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
 
-  &:not(:last-child) {
-  margin-right: 30px;}
+.our-team-member:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-team-member-photo {
@@ -1340,8 +1362,8 @@ textarea {
 }
 
 .our-team-member-profession {
-  font-weight: 400; 
-  color: $light-grey-text-color;
+  font-weight: 400;
+  color: #757575;
 }
 
 .our-team-member-name,
@@ -1357,7 +1379,7 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-*/
+
 /*.contant-clients-section {
   background-color: $lightest-background-color;
   padding-top: 94px;

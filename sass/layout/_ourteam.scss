@@ -1,4 +1,4 @@
-/*.our-team-section {
+.our-team-section {
   background-color: $darker-background-color;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -51,4 +51,39 @@
   justify-content: center;
   align-items: center;
 }
-*/
+
+
+/* Смартфон*/ 
+
+@media screen and (max-width: 767px) {
+  .our-team-section {
+      max-width: 480px;
+      margin: 0 auto;
+  }
+
+  .our-team-list list {
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  /*.our-team-member {
+    width: 270px;
+    height: 260px;
+  }*/
+}
+
+/*@media sreen and (min-width: 320px)  {
+  .our-team-member-1 {
+   background-image: url(../../images/Pictures.jpg/Mobile/our-team-member-mobile-1@1x.jpg);
+  }
+  }
+
+@media sreen and (max-width: 767px) and (min-device-pixel-ratio:2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2ddpx),
+  screen and (min-width: 320px) {
+    .our-team-member-1 {
+      background-image: url(../../images/Pictures.jpg/Mobile/our-team-member-mobile-1@2x.jpg);
+    }
+  }*/
