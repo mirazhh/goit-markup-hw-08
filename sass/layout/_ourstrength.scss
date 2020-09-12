@@ -49,11 +49,6 @@
 
 @media screen and (max-width: 767px) {
 
-    .our-team-section {
-        max-width: 480px;
-    }
-  
-
   .our-strengths-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -66,7 +61,8 @@
   }
   
   .our-strengths-item {
-    width: 450px;
+    min-width: 320px;
+    max-width: 450px;
   
   &:not(:last-child) {
     margin-bottom: 30px;}
@@ -80,7 +76,6 @@
     letter-spacing: 0, 03em;
     color: $light-grey-text-color;
   }
-
 }
 
   /* Планшет*/

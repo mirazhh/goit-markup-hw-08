@@ -7,6 +7,7 @@
 .our-team-section-title {
   margin-top: 0;
   margin-bottom: 50px;
+  /*align-items: center;*/
 }
 
 .our-team-list {
@@ -56,8 +57,9 @@
 /*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
-  .our-team-section {
-      max-width: 480px;
+
+  .our-team-section-title {
+    align-items: center;
   }
 
   .our-team-list {
@@ -124,9 +126,6 @@
   /*Tablet*/ 
   
   @media screen and (min-width: 768px) {
-    /*.our-team-section {
-        max-width: 1199px;
-    }*/
   
     .our-team-list {
       /*display: flex;*/
