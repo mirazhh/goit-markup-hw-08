@@ -1,7 +1,5 @@
-/*.contant-clients-section {
+.contant-clients-section {
   background-color: $lightest-background-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .constant-clients-section-title {
@@ -12,10 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.constant-clients-section-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .constant-clients-section-svg {
@@ -66,4 +60,54 @@
 &:hover svg,
 &:focus svg {
   fill: $accent-blue-color;}
-}*/
+}
+
+
+/* Смартфон*/ 
+
+@media screen and (max-width: 767px) {
+  
+  .contant-clients-section {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+
+  .constant-clients-section-item {
+    width: 450px;
+  
+  &:not(:last-child) {
+    margin-bottom: 30px;}
+  }
+
+}
+
+/* Планшет*/
+
+@media screen and (min-width: 768px) {
+  .contant-clients-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .constant-clients-section-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+}
+
+/* Десктоп*/
+
+@media screen and (min-width: 1200px) {
+  .contant-clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .constant-clients-section-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+}
