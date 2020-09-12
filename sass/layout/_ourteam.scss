@@ -53,7 +53,7 @@
 }
 
 
-/* Смартфон*/ 
+/*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
   .our-team-section {
@@ -63,28 +63,156 @@
   .our-team-list list {
     width: 480px;
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    flex-direction: column;
     flex-grow: 0;
     justify-content: center;
   }
 
-  .our-team-member {
+  .our-team-member-photo {
     width: 450px;
     height: 482px;
   }
 }
 
-/*@media sreen and (min-width: 320px)  {
+@media sreen and (min-width: 320px)  {
   .our-team-member-1 {
-   background-image: url(../../images/Pictures.jpg/Mobile/our-team-member-mobile-1@1x.jpg);
+   background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-1@1x.jpg);
   }
-  }
+
+  .our-team-member-2 {
+    background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-2@1x.jpg);
+   }
+
+  .our-team-member-3 {
+    background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-3@1x.jpg);
+   } 
+
+  .our-team-member-4 {
+    background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-4@1x.jpg);
+  } 
+}
 
 @media sreen and (max-width: 767px) and (min-device-pixel-ratio:2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2ddpx),
   screen and (min-width: 320px) {
     .our-team-member-1 {
-      background-image: url(../../images/Pictures.jpg/Mobile/our-team-member-mobile-1@2x.jpg);
+      background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-1@2x.jpg);
     }
-  }*/
+
+    .our-team-member-2 {
+      background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-2@2x.jpg);
+    }
+
+    .our-team-member-3 {
+      background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-3@2x.jpg);
+    }
+
+    .our-team-member-4 {
+      background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-4@2x.jpg);
+    }
+  }
+
+  
+  /*Tablet*/ 
+  
+  @media screen and (min-width: 768px) {
+    .our-team-section {
+        max-width: 1199px;
+    }
+  
+    .our-team-member-photo {
+      width: 354px;
+      height: 260px;
+    }
+  }
+
+
+  @media sreen and (min-width: 768px) and (max-width: 1199px) {
+    .our-team-member-1-photo {
+     background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-1@1x.jpg);
+    }
+
+    .our-team-member-2-photo {
+      background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-2@1x.jpg);
+    }
+
+    .our-team-member-3-photo {
+      background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-3@1x.jpg);
+    }
+
+    .our-team-member-4-photo {
+      background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-4@1x.jpg);
+    }
+  }
+  
+  @media sreen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-width: 768px) {
+      .our-team-member-1-photo {
+        background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-1@2x.jpg);
+      }
+
+      .our-team-member-2-photo {
+        background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-2@2x.jpg);
+      }
+
+      .our-team-member-3-photo {
+        background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-3@2x.jpg);
+      }
+
+      .our-team-member-4-photo {
+        background-image: url(../../images/Our-team-pics/Tablet/our-team-member-tablet-4@2x.jpg);
+      }
+    }
+
+     /*Desctop*/ 
+
+  @media screen and (min-width: 1200px) {
+      
+      .our-team-member-photo {
+        width: 270px;
+        height: 260px;
+      }
+    }
+  
+  @media sreen and (min-width: 1200px)  {
+    .our-team-member-1-photo {
+     background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-1@1x.jpg);
+    }
+
+    .our-team-member-2-photo {
+      background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-2@1x.jpg);
+    }
+
+    .our-team-member-3-photo {
+      background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-3@1x.jpg);
+    }
+
+    .our-team-member-4-photo {
+      background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-4@1x.jpg);
+    }
+  }
+  
+  @media sreen and (min-width: 1200px) and (min-device-pixel-ratio:2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-width: 1200px) {
+      .our-team-member-1-photo {
+        background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-1@2x.jpg);
+      }
+
+      .our-team-member-2-photo {
+        background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-2@2x.jpg);
+      }
+
+      .our-team-member-3-photo {
+        background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-3@2x.jpg);
+      }
+
+      .our-team-member-4-photo {
+        background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-4@2x.jpg);
+      }
+    }
