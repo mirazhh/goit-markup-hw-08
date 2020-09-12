@@ -1,3 +1,11 @@
+@media screen and (max-width: 1199px) {
+.what-we-do-section {
+  display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
 .title  {
   font-weight: 700; 
   font-size: 36px;
@@ -52,37 +60,6 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
-
-/* Смартфон*/ 
-
-@media screen and (max-width: 767px) {
-  .what-we-do-section  .header-box {
-      max-width: 480px;
-      margin: 0 auto;
-  }
 }
 
-/* Планшет*/
 
-@media screen and (min-width: 768px) {
-  
-
-  .hero-section-container {
-    padding-top: 118px;
-    padding-right: 204px;
-    padding-bottom: 118px;
-    padding-left: 204px;
-  }
-}
-
-/* Десктоп*/
-
-@media screen and (min-width: 1200px) {
-
-  .hero-section-container {
-    padding-top: 118px;
-    padding-right: 452px;
-    padding-bottom: 118px;
-    padding-left: 452px;
-  }
-}

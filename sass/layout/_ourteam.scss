@@ -9,6 +9,12 @@
   margin-bottom: 50px;
 }
 
+.our-team-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .our-team-member {
   background: $lightest-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -20,8 +26,8 @@
     padding-bottom: 24px;
   }
 
-  &:not(:last-child) {
-  margin-right: 30px;}
+  /*&:not(:last-child) {
+  margin-right: 30px;}*/
 }
 
 .our-team-member-photo {
@@ -46,12 +52,6 @@
   letter-spacing: 0.03em;
 }
 
-.our-team-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 /*Smartphone*/ 
 
@@ -60,35 +60,41 @@
       max-width: 480px;
   }
 
-  .our-team-list list {
+  .our-team-list {
     width: 480px;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     flex-direction: column;
     flex-grow: 0;
-    justify-content: center;
   }
 
   .our-team-member-photo {
     width: 450px;
     height: 482px;
   }
+
+  .our-team-member {
+  
+    &:not(:last-child) {
+    margin-bottom: 30px;}
+  }
+
 }
 
 @media sreen and (min-width: 320px)  {
-  .our-team-member-1 {
+  .our-team-member-1-photo {
    background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-1@1x.jpg);
   }
 
-  .our-team-member-2 {
+  .our-team-member-2-photo {
     background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-2@1x.jpg);
    }
 
-  .our-team-member-3 {
+  .our-team-member-3-photo {
     background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-3@1x.jpg);
    } 
 
-  .our-team-member-4 {
+  .our-team-member-4-photo {
     background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-4@1x.jpg);
   } 
 }
@@ -97,19 +103,19 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2ddpx),
   screen and (min-width: 320px) {
-    .our-team-member-1 {
+    .our-team-member-1-photo {
       background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-1@2x.jpg);
     }
 
-    .our-team-member-2 {
+    .our-team-member-2-photo {
       background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-2@2x.jpg);
     }
 
-    .our-team-member-3 {
+    .our-team-member-3-photo {
       background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-3@2x.jpg);
     }
 
-    .our-team-member-4 {
+    .our-team-member-4-photo {
       background-image: url(../../images/Our-team-pics/Mobile/our-team-member-mobile-4@2x.jpg);
     }
   }
@@ -118,10 +124,18 @@
   /*Tablet*/ 
   
   @media screen and (min-width: 768px) {
-    .our-team-section {
+    /*.our-team-section {
         max-width: 1199px;
-    }
+    }*/
   
+    .our-team-list {
+      /*display: flex;*/
+      /*flex-wrap: wrap;*/
+      flex-direction: column;
+      flex-grow: 0;
+  
+    }
+
     .our-team-member-photo {
       width: 354px;
       height: 260px;
@@ -176,9 +190,23 @@
         width: 270px;
         height: 260px;
       }
+
+      .our-team-list {
+        /*display: flex;*/
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .our-team-member {
+
+        &:not(:last-child) {
+        margin-right: 30px;}
+      }
+      
     }
   
-  @media sreen and (min-width: 1200px)  {
+   @media sreen and (min-width: 1200px)  {
     .our-team-member-1-photo {
      background-image: url(../../images/Our-team-pics/Desctop/our-team-member-desctop-1@1x.jpg);
     }

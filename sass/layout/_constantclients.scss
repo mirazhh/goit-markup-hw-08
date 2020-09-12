@@ -20,8 +20,8 @@
 
 .constant-clients-section-logo {
   display: flex;
-  width: 170px;
-  height: 90px;
+  /*width: 170px;
+  height: 90px;*/
   border: 1px solid #afb1b8;
   border-radius: 4px;
   justify-content: center;
@@ -63,33 +63,49 @@
 }
 
 
-/* Смартфон*/ 
+/*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
   
   .contant-clients-section {
     max-width: 480px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-
-  .constant-clients-section-item {
-    width: 450px;
-  
-  &:not(:last-child) {
-    margin-bottom: 30px;}
+  .constant-clients-section-list {
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: center;
   }
 
+  .constant-clients-section-logo {
+    width: 210px;
+    height: 90px;
+  }
+
+  .constant-clients-section-item {
+  
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;}
+
+    &:not(:nth-last-child(-n+2)) {
+      margin-bottom: 30px;}
+  }
 }
 
-/* Планшет*/
+/*Tablet*/
 
 @media screen and (min-width: 768px) {
   .contant-clients-section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .constant-clients-section-logo {
+    width: 226px;
+    height: 90px;
   }
 
   .constant-clients-section-item:not(:last-child) {
@@ -98,7 +114,7 @@
 
 }
 
-/* Десктоп*/
+/*Desctop*/
 
 @media screen and (min-width: 1200px) {
   .contant-clients-section {
@@ -109,5 +125,11 @@
   .constant-clients-section-item:not(:last-child) {
     margin-right: 30px;
   }
+
+  .constant-clients-section-logo {
+    width: 170px;
+    height: 90px;
+  }
+  
 
 }
