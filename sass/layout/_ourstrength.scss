@@ -55,14 +55,12 @@
   }
 
   .our-strengths-section-pics {
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     padding-top: 25px;
   }
   
   .our-strengths-item {
-    min-width: 320px;
-    max-width: 450px;
   
   &:not(:last-child) {
     margin-bottom: 30px;}
