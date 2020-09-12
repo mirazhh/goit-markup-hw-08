@@ -889,11 +889,15 @@ textarea {
 
 /*Smartphone*/
 @media screen and (max-width: 767px) {
-  /*.project-types-list {
-    justify-content: space-around;
-  }*/
+  .project-types-list {
+    justify-content: space-between;
+  }
   .project-types-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;
+  }
+  .our-projects-list {
+    align-items: center;
+    align-content: center;
   }
   .our-projects-item:not(:nth-child(3n)) {
     margin-right: 8px;
