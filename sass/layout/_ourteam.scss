@@ -7,7 +7,6 @@
 .our-team-section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  /*align-items: center;*/
 }
 
 .our-team-list {
@@ -26,9 +25,6 @@
     padding-top: 16px;
     padding-bottom: 24px;
   }
-
-  /*&:not(:last-child) {
-  margin-right: 30px;}*/
 }
 
 .our-team-member-photo {
@@ -57,22 +53,22 @@
 /*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
-
-  .our-team-section-title {
-    align-items: center;
+  
+  .our-team-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
   }
 
   .our-team-list {
-    width: 480px;
     display: flex;
-    /*flex-wrap: wrap;*/
     flex-direction: column;
     flex-grow: 0;
   }
 
   .our-team-member-photo {
     width: 450px;
-    height: 482px;
+    height: 320px;
   }
 
   .our-team-member {

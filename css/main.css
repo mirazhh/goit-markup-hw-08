@@ -1316,7 +1316,6 @@ textarea {
 .our-team-section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  /*align-items: center;*/
 }
 
 .our-team-list {
@@ -1329,8 +1328,6 @@ textarea {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /*&:not(:last-child) {
-  margin-right: 30px;}*/
 }
 
 .our-team-member .social-network-links-list {
@@ -1362,19 +1359,19 @@ textarea {
 
 /*Smartphone*/
 @media screen and (max-width: 767px) {
-  .our-team-section-title {
+  .our-team-section {
+    display: flex;
     align-items: center;
+    text-align: center;
   }
   .our-team-list {
-    width: 480px;
     display: flex;
-    /*flex-wrap: wrap;*/
     flex-direction: column;
     flex-grow: 0;
   }
   .our-team-member-photo {
     width: 450px;
-    height: 482px;
+    height: 320px;
   }
   .our-team-member:not(:last-child) {
     margin-bottom: 30px;
@@ -1575,10 +1572,11 @@ textarea {
 /*Smartphone*/
 @media screen and (max-width: 767px) {
   .contant-clients-section {
-    max-width: 480px;
-    /*margin: 0 auto;*/
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
   .constant-clients-section-title {
     align-items: center;
@@ -1746,34 +1744,33 @@ textarea {
 
 /*Smartphone*/
 @media screen and (max-width: 767px) {
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .web-studio-logo {
     font-size: 24px;
     line-height: 1.167;
-    align-items: center;
   }
   .footer-contacts-item:not(:last-child) {
     margin-bottom: 8px;
-    align-items: center;
   }
   .footer-contacts-item:last-child {
     margin-bottom: 60px;
-    align-items: center;
   }
   .join-us-text {
     margin-bottom: 20px;
-    align-items: center;
   }
   .footer-social-network-links-list {
     margin-bottom: 60px;
-    align-items: center;
   }
   .sign-up-text {
     margin-bottom: 20px;
-    align-items: center;
   }
   .sign-up-form-input {
     margin-bottom: 20px;
-    align-items: center;
   }
 }
 

@@ -68,10 +68,11 @@
 @media screen and (max-width: 767px) {
   
   .contant-clients-section {
-    max-width: 480px;
-    /*margin: 0 auto;*/
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 
   .constant-clients-section-title {

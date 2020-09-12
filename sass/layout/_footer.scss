@@ -123,39 +123,39 @@
 
 @media screen and (max-width: 767px) {
   
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
   .web-studio-logo {
     font-size: 24px;
     line-height: 1.167;
-    align-items: center;
     }
 
   .footer-contacts-item:not(:last-child) {
     margin-bottom: 8px;
-    align-items: center;
   }
 
   .footer-contacts-item:last-child {
     margin-bottom: 60px;
-    align-items: center;
   }
   .join-us-text {
     margin-bottom: 20px;
-    align-items: center;
   }
 
   .footer-social-network-links-list {
     margin-bottom: 60px;
-    align-items: center;
   }
 
   .sign-up-text {
     margin-bottom: 20px;
-    align-items: center;
   }
 
   .sign-up-form-input {
     margin-bottom: 20px;
-    align-items: center;
   }
 }
 
