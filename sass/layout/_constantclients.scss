@@ -8,6 +8,7 @@
 
 .constant-clients-section-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -68,11 +69,11 @@
 @media screen and (max-width: 767px) {
   
   .contant-clients-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     align-items: center;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .constant-clients-section-title {
@@ -103,7 +104,11 @@
 /*Tablet*/
 
 @media screen and (min-width: 768px) {
+  
   .contant-clients-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -113,8 +118,13 @@
     height: 90px;
   }
 
-  .constant-clients-section-item:not(:last-child) {
-    margin-right: 30px;
+  .constant-clients-section-item {
+  
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;}
+
+    &:not(:nth-last-child(-n+3)) {
+      margin-bottom: 30px;}
   }
 
 }

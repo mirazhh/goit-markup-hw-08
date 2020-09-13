@@ -85,8 +85,13 @@
   
   @media screen and (min-width: 768px) {
   
+    .our-team-section {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      }
+
     .our-team-list {
-      flex-direction: column;
       flex-grow: 0;
     }
 
@@ -94,6 +99,16 @@
       width: 354px;
       height: 260px;
     }
+
+    .our-team-member {
+  
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;}
+
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;}
+    }
+
   }
 
 
@@ -106,7 +121,9 @@
         height: 260px;
       }
 
-      .our-team-list {
+     .our-team-list {
+        display: flex;
+        flex-grow: 0;
         justify-content: center;
         align-items: center;
       }
