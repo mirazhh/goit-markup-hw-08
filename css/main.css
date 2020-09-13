@@ -957,7 +957,7 @@ textarea {
 }
 
 /*Tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-menu-button {
     display: none;
   }
@@ -973,6 +973,7 @@ textarea {
   .contacts-menu {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
   .web-studio-navigation {
     margin-right: 81px;
@@ -1006,15 +1007,20 @@ textarea {
   .header-menu-button {
     display: none;
   }
-  .web-studio-logo {
-    font-size: 26px;
-    line-height: 1.19ж;
+  .header-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
   }
   .header-box-navigation,
   .web-studio-menu,
   .contacts-menu {
     display: flex;
     align-items: center;
+  }
+  .web-studio-logo {
+    font-size: 26px;
+    line-height: 1.19ж;
   }
   .web-studio-header-logo {
     margin-right: 85px;
@@ -1105,7 +1111,7 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* Смартфон*/
+/*Smartphone*/
 @media screen and (max-width: 767px) {
   .header-box {
     max-width: 480px;
@@ -1123,8 +1129,8 @@ textarea {
   }
 }
 
-/* Планшет*/
-@media screen and (min-width: 768px) {
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-section-container {
     padding-top: 118px;
     padding-right: 204px;
@@ -1215,12 +1221,15 @@ textarea {
   }
 }
 
-/* Планшет*/
-@media screen and (min-width: 768px) {
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-strengths-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  /*.our-strengths-section-pics {
+    margin-bottom: 30px;
+  }*/
   .our-strengths-item {
     width: 354px;
     height: 120px;
@@ -1392,7 +1401,7 @@ textarea {
 }
 
 /*Tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team-section {
     display: flex;
     align-items: center;
@@ -1532,7 +1541,7 @@ textarea {
 }
 
 /*Tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contant-clients-section {
     display: flex;
     align-items: center;
@@ -1710,7 +1719,7 @@ textarea {
 }
 
 /*Tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-box-container {
     padding-left: 76px;
     padding-right: 89px;
@@ -1765,6 +1774,10 @@ textarea {
     display: flex;
     align-items: baseline;
   }
+  .tablet-footer-box-container {
+    display: flex;
+    align-items: baseline;
+  }
   .footer-box-contacts {
     margin-right: 69px;
   }
@@ -1774,9 +1787,15 @@ textarea {
   .join-us-box {
     margin-right: 94px;
   }
+  .join-us-text {
+    margin-bottom: 20px;
+  }
   .sign-up-form-section {
     display: flex;
     align-items: center;
+  }
+  .sign-up-text {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

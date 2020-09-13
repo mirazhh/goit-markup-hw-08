@@ -69,9 +69,9 @@
   }
 }
 
-  /* Планшет*/
-
-@media screen and (min-width: 768px) {
+   /*Tablet*/ 
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
 
   .our-strengths-section {
     padding-top: 60px;
