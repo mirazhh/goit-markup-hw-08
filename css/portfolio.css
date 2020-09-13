@@ -891,6 +891,10 @@ textarea {
   }
   .our-projects-photo-wrapper {
     width: 450px;
+    height: 404px;
+  }
+  .our-projects-photo {
+    width: 450px;
     height: 294px;
   }
 }
@@ -911,6 +915,10 @@ textarea {
   }
   .our-projects-photo-wrapper {
     width: 354px;
+    height: 404px;
+  }
+  .our-projects-photo {
+    width: 354px;
     height: 294px;
   }
 }
@@ -930,6 +938,10 @@ textarea {
     margin-bottom: 30px;
   }
   .our-projects-photo-wrapper {
+    width: 370px;
+    height: 404px;
+  }
+  .our-projects-photo {
     width: 370px;
     height: 294px;
   }
