@@ -752,22 +752,6 @@ textarea {
   }
 }
 
-.portfolio-link-active {
-  position: relative;
-  color: #2196f3;
-}
-
-.portfolio-link-active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-
 .project-types-section {
   align-items: center;
   padding-top: 93px;
@@ -890,17 +874,24 @@ textarea {
 /*Smartphone*/
 @media screen and (max-width: 767px) {
   .project-types-list {
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .project-types-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 15px;
+  }
+  .project-types-item:not(:nth-child(3n)) {
     margin-bottom: 15px;
   }
   .our-projects-list {
     align-items: center;
     align-content: center;
   }
-  .our-projects-item:not(:nth-child(3n)) {
-    margin-right: 8px;
+  .our-projects-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .our-projects-photo-wrapper {
+    width: 450px;
+    height: 294px;
   }
 }
 
@@ -918,6 +909,10 @@ textarea {
   .our-projects-item.our-projects-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .our-projects-photo-wrapper {
+    width: 354px;
+    height: 294px;
+  }
 }
 
 /*Desctop*/
@@ -933,6 +928,10 @@ textarea {
   }
   .our-projects-item:not(:nth-child(n + 7)) {
     margin-bottom: 30px;
+  }
+  .our-projects-photo-wrapper {
+    width: 370px;
+    height: 294px;
   }
 }
 
