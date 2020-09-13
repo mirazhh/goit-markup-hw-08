@@ -1316,6 +1316,7 @@ textarea {
 
 .our-team-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1377,9 +1378,7 @@ textarea {
 /*Tablet*/
 @media screen and (min-width: 768px) {
   .our-team-list {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*flex-direction: column;*/
+    flex-direction: column;
     flex-grow: 0;
   }
   .our-team-member-photo {
@@ -1395,7 +1394,6 @@ textarea {
     height: 260px;
   }
   .our-team-list {
-    /*display: flex;*/
     justify-content: center;
     align-items: center;
   }
