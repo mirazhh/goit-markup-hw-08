@@ -281,16 +281,17 @@
 
 @media screen and (min-width: 1200px) {
   
-  .header-menu-button {
-    display: none;
-  }
-
   .header-box-container {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 0;
+    align-items: center;
     justify-content: space-between;
     margin: 0;
+  }
+
+  .header-menu-button {
+    display: none;
   }
 
   .header-box-navigation {

@@ -1,7 +1,7 @@
 .our-team-section {
   background-color: $darker-background-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /*padding-top: 94px;
+  padding-bottom: 94px;*/
 }
 
 .our-team-section-title {
@@ -59,6 +59,8 @@
   display: flex;
   align-items: center;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   }
 
   .our-team-list {
@@ -73,11 +75,15 @@
   }
 
   .our-team-member {
+    width: 450px;
+    height: 482px;
+  }
+
+  .our-team-member {
   
     &:not(:last-child) {
     margin-bottom: 30px;}
   }
-
 }
 
 
@@ -89,6 +95,8 @@
       display: flex;
       align-items: center;
       text-align: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
       }
 
     .our-team-list {
@@ -116,7 +124,12 @@
 
   @media screen and (min-width: 1200px) {
       
-      .our-team-member-photo {
+    .our-team-section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    
+    .our-team-member-photo {
         width: 270px;
         height: 260px;
       }

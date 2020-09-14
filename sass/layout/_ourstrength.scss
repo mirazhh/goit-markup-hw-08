@@ -15,10 +15,6 @@
   background-color: $darker-background-color;
 }
 
-/*.our-strengths-section-pics:not(:last-child) {
-  margin-bottom: 30px;
-}*/
-
 .our-strengths-section-svg {
   width: 70px;
   height: 70px;
@@ -42,7 +38,7 @@
 }
 
 
-/*Смартфон*/ 
+/*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
 
@@ -51,17 +47,17 @@
     padding-bottom: 60px;
   }
   
-.our-strengths-section-pics {
-  margin-bottom: 30px;
-}
-
-  .our-strengths-item {
+  .our-strengths-section-pics {
     width: 450px;
     height: 120px;
+    margin-bottom: 30px;
+  }
+
+  .our-strengths-item {
     padding-top: 25px;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;}
+    &:not(:last-child) {
+      margin-bottom: 30px;}
   }
 
   .our-strengths-item-info {
@@ -78,14 +74,22 @@
     padding-bottom: 60px;
   }
   
-  /*.our-strengths-section-pics {
-    margin-bottom: 30px;
-  }*/
-
   .our-strengths-item {
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+  
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;}
+
+    &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;} 
+  }
+
+  .our-strengths-section-pics {
     width: 354px;
     height: 120px;
-  
+
     &:not(:nth-child(2n)) {
       margin-right: 30px;}
 
@@ -102,18 +106,26 @@
     &:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;}
   }
-
 }
  
-
-/* Десктоп*/
+/*Desctop*/
 
 @media screen and (min-width: 1200px) {
-
+  
   .our-strengths-section {
     padding-top: 94px;
     padding-bottom: 47px;
   }
+
+  .our-strengths-item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;}
+    }
   
   .our-strengths-section-pics {
     width: 270px;
@@ -122,21 +134,17 @@
     &:not(:last-child) {
       margin-bottom: 30px;}
   }
-
-  .our-strengths-item {
-    /*width: 270px;*/
-  
-  &:not(:last-child) {
-    margin-right: 30px;}
-  }
   
   .our-strengths-item-title {
+     
+    &:not(:last-child) {
+      margin-bottom: 10px;}
+  }
+
+  .our-strengths-item-info {
     
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
   }
 }
-
-
-
