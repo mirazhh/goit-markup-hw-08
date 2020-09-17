@@ -92,7 +92,7 @@
 
   font-weight: normal;
   font-size: 18px;
-  /*line-height: 1.556;*/
+  line-height: 1.556;
   letter-spacing: 0.03em;
 }
 
@@ -156,10 +156,18 @@
     padding-bottom: 60px;
   }
 
+  .our-projects-item-description {
+    padding-top: 77px;
+    padding-right: 24px;
+    padding-left: 77px;
+    padding-left: 24px;
+  }
+
   .our-projects-item {
     width: 450px;
     height: 404px;
   }
+
 
   .our-projects-photo-wrapper {
     width: 450px;
@@ -193,8 +201,6 @@
 
     .our-projects-list {
       display: flex;
-      /*align-items: center;
-      justify-content: center;*/
     }
 
     .our-projects-item {
@@ -214,6 +220,13 @@
     }
     
     .our-projects-item-description {
+      padding-top: 49px;
+      padding-right: 24px;
+      padding-left: 49px;
+      padding-left: 24px;
+    }
+
+    .our-projects-information {
       padding-top: 20px;
       padding-bottom: 20px;
       line-height: 2;
