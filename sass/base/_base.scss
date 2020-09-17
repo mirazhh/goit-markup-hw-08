@@ -16,6 +16,10 @@ html {
     font-size: 14px;
   }
 
+  body.modal-open {
+    overflow: hidden;
+  }
+
   .link {
     text-decoration: none;
     display: block;
@@ -54,3 +58,5 @@ html {
     visibility: hidden;
     pointer-events: none;
   }
+
+  
