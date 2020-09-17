@@ -10,7 +10,8 @@
 }
 
 .our-strengths-section-pics {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: $darker-background-color;
 }

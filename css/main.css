@@ -999,6 +999,7 @@ textarea {
   .contacts-menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     text-align: left;
   }
   .web-studio-navigation {
@@ -1188,6 +1189,7 @@ textarea {
   .hero-section-title {
     font-size: 44px;
     line-height: 1.364;
+    margin-bottom: 30px;
   }
 }
 
@@ -1203,7 +1205,8 @@ textarea {
 }
 
 .our-strengths-section-pics {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
 }
