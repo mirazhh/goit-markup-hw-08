@@ -1006,7 +1006,6 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: left;
   }
   .web-studio-navigation {
     margin-right: 81px;

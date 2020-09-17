@@ -679,7 +679,6 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: left;
   }
   .web-studio-navigation {
     margin-right: 81px;
@@ -918,6 +917,12 @@ textarea {
   .our-projects-section {
     padding-top: 18px;
     padding-bottom: 60px;
+  }
+  .our-projects-item {
+    margin: 0;
+  }
+  .our-projects-item:not(:last-child) {
+    margin-bottom: 30px;
   }
   .our-projects-item-description {
     padding-top: 77px;

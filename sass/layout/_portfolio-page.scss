@@ -159,6 +159,14 @@
     padding-bottom: 60px;
   }
 
+  .our-projects-item {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   .our-projects-item-description {
     padding-top: 77px;
     padding-right: 24px;
