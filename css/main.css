@@ -723,10 +723,10 @@ img {
 
 .agree-text {
   font-weight: normal;
-  line-height: 1.714px;
+  /*line-height: 1.714px;*/
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 7px;
+  margin-left: 8px;
 }
 
 .agreement-document {
@@ -767,6 +767,14 @@ img {
   .comment-field {
     max-width: 370px;
   }
+  .agree-text {
+    font-size: 12px;
+    line-height: 1.167px;
+  }
+  .agreement-document {
+    font-size: 12px;
+    line-height: 1.167px;
+  }
 }
 
 /*Tablet*/
@@ -781,12 +789,23 @@ img {
   .comment-field {
     max-width: 370px;
   }
+  .agree-text {
+    font-size: 12px;
+    line-height: 1.167px;
+  }
+  .agreement-document {
+    font-size: 12px;
+    line-height: 1.167px;
+  }
 }
 
 /*Desctop*/
 @media screen and (min-width: 1200px) {
   .backdrop {
     padding-top: 221px;
+  }
+  .agree-text {
+    line-height: 1.714px;
   }
 }
 
@@ -1123,7 +1142,6 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1179,6 +1197,15 @@ img {
     font-size: 26px;
     line-height: 1.615;
   }
+  .hero-section-overlay {
+    background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-section-overlay {
+    background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Mobile/Hero-mobile@2x.jpg);
+  }
 }
 
 /*Tablet*/
@@ -1193,6 +1220,15 @@ img {
     font-size: 26px;
     line-height: 1.615;
   }
+  .hero-section-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Tablet/Hero-tablet@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero-section-overlay {
+    background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Tablet/Hero-tablet@2x.jpg);
+  }
 }
 
 /* Десктоп*/
@@ -1205,6 +1241,15 @@ img {
     font-size: 44px;
     line-height: 1.364;
     margin-bottom: 30px;
+  }
+  .hero-section-overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section-overlay {
+    background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Desctop/Hero-desctop@2x.jpg);
   }
 }
 
@@ -1401,8 +1446,6 @@ img {
 
 .our-team-section {
   background-color: #f5f4fa;
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
 }
 
 .our-team-section-title {
@@ -1464,12 +1507,11 @@ img {
     flex-direction: column;
     flex-grow: 0;
   }
-  .our-team-member-photo {
-    height: 320px;
+  .our-team-member-photo-wrapper {
+    background-position: center;
   }
   .our-team-member {
     width: 100%;
-    height: 482px;
   }
   .our-team-member:not(:last-child) {
     margin-bottom: 30px;

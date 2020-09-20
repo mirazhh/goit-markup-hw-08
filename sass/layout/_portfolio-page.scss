@@ -154,6 +154,7 @@
   }
 
   .our-projects-item {
+    width: 100%;
     margin: 0;
 
     &:not(:last-child) {
@@ -168,16 +169,6 @@
     padding-left: 24px;
   }
 
-  .our-projects-item {
-    width: 450px;
-    height: 404px;
-  }
-
-
-  .our-projects-photo-wrapper {
-    width: 450px;
-    height: 294px;
-  }
 }
 
   /*Tablet*/ 

@@ -915,6 +915,7 @@ img {
     padding-bottom: 60px;
   }
   .our-projects-item {
+    width: 100%;
     margin: 0;
   }
   .our-projects-item:not(:last-child) {
@@ -925,14 +926,6 @@ img {
     padding-right: 24px;
     padding-left: 77px;
     padding-left: 24px;
-  }
-  .our-projects-item {
-    width: 450px;
-    height: 404px;
-  }
-  .our-projects-photo-wrapper {
-    width: 450px;
-    height: 294px;
   }
 }
 
