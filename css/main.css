@@ -1239,16 +1239,39 @@ textarea {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .our-strengths-section-pics {
-    width: 450px;
-    height: 120px;
-    margin-bottom: 30px;
-  }
   .our-strengths-item {
-    padding-top: 25px;
+    max-width: 450px;
+    height: 120px;
   }
   .our-strengths-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .our-strengths-section-pics {
+    margin-bottom: 30px;
+  }
+  .our-strengths-section-pic-1 {
+    padding-top: 25px;
+    padding-right: 192px;
+    padding-bottom: 25px;
+    padding-left: 192px;
+  }
+  .our-strengths-section-pic-2 {
+    padding-top: 25px;
+    padding-right: 191px;
+    padding-bottom: 25px;
+    padding-left: 191px;
+  }
+  .our-strengths-section-pic-3 {
+    padding-top: 33px;
+    padding-right: 190px;
+    padding-bottom: 33px;
+    padding-left: 190px;
+  }
+  .our-strengths-section-pic-4 {
+    padding-top: 25px;
+    padding-right: 190px;
+    padding-bottom: 25px;
+    padding-left: 190px;
   }
   .our-strengths-item-info {
     align-items: center;
@@ -1582,8 +1605,8 @@ textarea {
     flex-grow: 0;
     justify-content: center;
   }
-  .constant-clients-section-logo {
-    width: 210px;
+  .constant-clients-section-item {
+    max-width: 210px;
     height: 90px;
   }
   .constant-clients-section-item:not(:nth-child(2n)) {
@@ -1591,6 +1614,42 @@ textarea {
   }
   .constant-clients-section-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
+  }
+  .svg-wrapper-1 {
+    padding-top: 20px;
+    padding-right: 82px;
+    padding-bottom: 20px;
+    padding-left: 83px;
+  }
+  .svg-wrapper-2 {
+    padding-top: 19px;
+    padding-right: 85px;
+    padding-bottom: 19px;
+    padding-left: 85px;
+  }
+  .svg-wrapper-3 {
+    padding-top: 24px;
+    padding-right: 84px;
+    padding-bottom: 23px;
+    padding-left: 85px;
+  }
+  .svg-wrapper-4 {
+    padding-top: 24px;
+    padding-right: 65px;
+    padding-bottom: 23px;
+    padding-left: 65px;
+  }
+  .svg-wrapper-5 {
+    padding-top: 22px;
+    padding-right: 75px;
+    padding-bottom: 21px;
+    padding-left: 76px;
+  }
+  .svg-wrapper-6 {
+    padding-top: 22px;
+    padding-right: 60px;
+    padding-bottom: 22px;
+    padding-left: 61px;
   }
 }
 
