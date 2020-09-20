@@ -62,8 +62,23 @@
     line-height: 1.615;
   }
 
+  
   .hero-section-overlay {
-    background-image: linear-gradient (
+    margin: 0;
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(rgba(47, 48, 58, 0.8)),
+        to(rgba(47, 48, 58, 0.8))
+      ),
+      url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
+    background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
@@ -72,6 +87,8 @@
   }
   
   @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero-section-overlay {
@@ -79,8 +96,8 @@
       to right,
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
-    ), 
-    url(../images/Hero/Mobile/Hero-mobile@2x.jpg);
+    ),
+     url(../images/Hero/Mobile/Hero-mobile@2x.jpg);
     }
   }
 
@@ -104,6 +121,19 @@
   }
 
   .hero-section-overlay {
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(rgba(47, 48, 58, 0.8)),
+        to(rgba(47, 48, 58, 0.8))
+      ),
+      url(../images/Hero/Tablet/Hero-tablet@1x.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Hero/Tablet/Hero-tablet@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
@@ -113,6 +143,8 @@
   }
   
   @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero-section-overlay {
@@ -143,6 +175,19 @@
   }
 
   .hero-section-overlay {
+    background-image: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(rgba(47, 48, 58, 0.8)),
+        to(rgba(47, 48, 58, 0.8))
+      ),
+      url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
@@ -152,6 +197,8 @@
   }
   
   @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero-section-overlay {

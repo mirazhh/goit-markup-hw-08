@@ -1197,11 +1197,14 @@ img {
     line-height: 1.615;
   }
   .hero-section-overlay {
-    background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
+    margin: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Mobile/Hero-mobile@1x.jpg);
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-section-overlay {
     background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Mobile/Hero-mobile@2x.jpg);
   }
@@ -1220,11 +1223,13 @@ img {
     line-height: 1.615;
   }
   .hero-section-overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Hero/Tablet/Hero-tablet@1x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Tablet/Hero-tablet@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Tablet/Hero-tablet@1x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero-section-overlay {
     background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Tablet/Hero-tablet@2x.jpg);
   }
@@ -1242,11 +1247,13 @@ img {
     margin-bottom: 30px;
   }
   .hero-section-overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero/Desctop/Hero-desctop@1x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section-overlay {
     background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url(../images/Hero/Desctop/Hero-desctop@2x.jpg);
   }
