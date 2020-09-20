@@ -47,10 +47,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  
+
   .our-strengths-item {
-    max-width: 450px;
-    height: 120px;
 
     &:not(:last-child) {
       margin-bottom: 30px;}
@@ -58,6 +56,8 @@
 
 
   .our-strengths-section-pics {
+    max-width: 450px;
+    height: 120px;
     margin-bottom: 30px;
   }
 
