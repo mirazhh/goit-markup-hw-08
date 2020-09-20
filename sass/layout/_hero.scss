@@ -49,10 +49,6 @@
 /*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
-  .header-box {
-    max-width: 480px;
-    margin: 0 auto;
-  }
 
   .hero-section-container {
     padding-top: 118px;
@@ -128,6 +124,7 @@
      url(../images/Hero/Tablet/Hero-tablet@2x.jpg);
     }
   }
+  
 }
 
 /* Десктоп*/
