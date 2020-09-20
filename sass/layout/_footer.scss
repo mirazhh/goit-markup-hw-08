@@ -23,6 +23,10 @@
 .footer-contacts-item-requisites {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-social-network-link-logo {
+  background-color: rgba(255, 255, 255, 0.1);
+}
  
 .join-us-text {
   font-weight: 700; 
@@ -30,7 +34,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: $dark-theme-text-color;
-  /*margin-bottom: 20px;*/
   text-transform: uppercase;
 }
 
@@ -40,7 +43,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /*margin-bottom: 20px;*/
   color: $dark-theme-text-color;
 }
 
@@ -82,9 +84,7 @@
 }
 
 .sign-up-form-input {
-  width: 358px;
   height: 50px;
-  /*margin-right: 12px;*/
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -137,6 +137,7 @@
   .footer-contacts-item:last-child {
     margin-bottom: 60px;
   }
+  
   .join-us-text {
     margin-bottom: 20px;
   }
@@ -145,13 +146,15 @@
     margin-bottom: 60px;
   }
 
+  .sign-up-form-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .sign-up-text {
     margin-bottom: 20px;
   }
 
-  .sign-up-form-input {
-    margin-bottom: 20px;
-  }
 }
 
  /*Tablet*/ 
@@ -205,6 +208,10 @@
     text-align: center;
   }
 
+  .sign-up-form-input {
+    width: 358px;
+  }
+
   .sign-up-text {
     margin-bottom: 20px;
   }
@@ -255,6 +262,7 @@
   }
 
   .sign-up-form-input {
+    width: 358px;
     margin-right: 12px;
   }
 

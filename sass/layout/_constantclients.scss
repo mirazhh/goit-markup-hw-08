@@ -57,6 +57,7 @@
   fill: $accent-blue-color;}
 }
 
+
 /*Smartphone*/ 
 
 @media screen and (max-width: 767px) {
@@ -81,7 +82,6 @@
 
   .constant-clients-section-item {
     max-width: 210px;
-    height: 90px;
 
     &:not(:nth-child(2n)) {
       margin-right: 30px;}
@@ -89,7 +89,11 @@
     &:not(:nth-last-child(-n+2)) {
       margin-bottom: 30px;}
   }
-
+  
+  .constant-clients-section-svg-wrapper {
+  justify-content: center;
+  }
+  
   .svg-wrapper-1 {
     padding-top: 20px;
     padding-right: 82px;
@@ -186,5 +190,4 @@
     width: 170px;
     height: 90px;
   }
-
 }
